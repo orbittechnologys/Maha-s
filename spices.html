@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spices and groceries</title>
+<!-- aos css-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style type="text/css">
+
+    /* nav */
+    .nav-item1 a:hover {
+      text-decoration: offset;
+      color: #fff;
+      border-bottom: 0px solid #fff;
+      padding-bottom: 3px;
+    }
+
+    .nav-item1 {
+      color: #FFF;
+      font-family: Microsoft JhengHei UI;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding: 5px;
+    }
+
+    .nav-item h6:hover {
+      border-bottom: 2px solid #7C2B19;
+      padding-bottom: 3px;
+    }
+
+    .nav-item a:hover{
+      text-decoration: offset;
+     
+      border-bottom: 1px solid #fff;
+      padding-bottom: 3px;
+    }
+
+    h1 {
+      color: #7C2B19;
+      margin-top: -1px;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      border-radius: 20px;
+      border: 2px solid #FFF;
+      background: rgba(124, 43, 25, 0.70);
+      /* Black see-through */
+      color: #f1f1f1;
+      width: 80%;
+      height: 15%;
+      transition: .5s ease;
+      margin-left: 20px;
+      /* margin-top: 10%; */
+      margin-bottom: 20px;
+      color: white;
+      font-size: 20px;
+      
+      text-align: center;
+    }
+
+
+    #navbarSupportedContent ul li a{
+            margin-left: 10px;
+            
+        }
+        #navbarSupportedContent ul li a:hover{
+          text-decoration: underline;
+
+        }
+  </style>
+  
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #7C2B19;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./media/Maha’s.png" alt="" height="40"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item1">
+            <a class="nav-link text-white" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item1">
+            <a class="nav-link text-white" href="./index.html">Product</a>
+          </li>
+          <li class="nav-item1">
+            <a class="nav-link text-white" href="./index.html">About</a>
+          </li>
+          <li class="nav-item1">
+            <a class="nav-link text-white" href="./index.html">contact</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- spices and groceries -->
+  <div class="container py-5">
+    <div class="row">
+      <h1 class="mb-4" data-aos="flip-up" data-aos-delay="100" data-aos-duration="1000">Spices</h1>
+
+      <div class="col-12">
+        <div class="bg-white">
+          <ul class="nav nav-tabs justify-content-center" data-aos="slide-right" data-aos-delay="100" data-aos-duration="1000">
+            <li class="nav-item ">
+              <a class="nav-link active border-0" data-bs-toggle="tab" href="#card1"><img src="./Assests/images/spices-1.png"></a>
+              <a href="#card1" class="text-dark" style="text-decoration: none;"><h6 class="text-center">Powdered spices</h6></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border-0" data-bs-toggle="tab" href="#card2"><img src="./Assests/images/blend-masala.png"></a>
+              <a href="#card2" class="text-dark" style="text-decoration: none;"><h6 class="text-center">Secret Blend Of Spices</h6></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border-0" data-bs-toggle="tab" href="#card3"><img src="./media/Ellipse 3.png"></a>
+              <a href="#card3" class="text-dark" style="text-decoration: none;"><h6 class="text-center">Raw Spices</h6></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border-0" data-bs-toggle="tab" href="#card4"><img src="./media/Ellipse 4.png"></a>
+              <a href="#card4" class="text-dark" style="text-decoration: none;"><h6 class="text-center">Flavoured Spices</h6></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border-0" data-bs-toggle="tab" href="#card5"><img src="./media/Ellipse 5.png"></a>
+              <a href="#card4" class="text-dark" style="text-decoration: none;"><h6 class="text-center">Authentic Spices</h6></a>
+            </li>
+          </ul>
+          <div class="row">
+            <div class="col-12">
+              <div class="tab-content p-4 ">
+                <div id="card1" class="tab-pane fade in active show">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/turmeric-1.png" class="card-img-top" alt="...">
+                        <div class="overlay text-center">Turmeric Powder</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/redchilli.png" class="card-img-top" alt="...">
+                        <div class="overlay">Red Chilli Powder</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/corriander.png" class="card-img-top" alt="...">
+                        <div class="overlay">Corriander Powder</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/nutmeg.png" class="card-img-top" alt="...">
+                        <div class="overlay">nutmeg powder</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+
+
+
+                </div>
+                <div id="card2" class="tab-pane fade ">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/mahas1.jpeg" class="card-img-top" alt="...">
+                        <div class="overlay">Broast Chicken Mix</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/mahas5.jpeg" class="card-img-top" alt="...">
+                       
+                        <div class="overlay">Al Faham</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/maha3.jpeg" class="card-img-top" alt="...">
+                        <div class="overlay">Chicken Crumbs</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/mahas4.jpeg" class="card-img-top" alt="...">
+                        <div class="overlay">Chicken Nuggets</div>
+                      </div>
+                    </div>
+                   </div>
+
+                   <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/mahas6.jpeg" class="card-img-top" alt="...">
+                        <div class="overlay">Chicken 65 Kabab</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/mahas7.jpeg" class="card-img-top" alt="...">
+                       
+                        <div class="overlay">Broast Pepper Crispy</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/mahas8.jpeg" class="card-img-top" alt="...">
+                        <div class="overlay">Pepper Tikka BBQ</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/mahas9.jpeg" class="card-img-top" alt="...">
+                        <div class="overlay">Fish Fry</div>
+                      </div>
+                    </div>
+                   </div>
+
+                   <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/mahas10.jpeg" class="card-img-top" alt="...">
+                        <div class="overlay">Tikka Tandoor</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/mahas12.jpeg" class="card-img-top" alt="...">
+                       
+                        <div class="overlay">Pepper Shish Kabab</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/mahas13.jpeg" class="card-img-top" alt="...">
+                        <div class="overlay">Oats Fried Chicken</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/mahas14.jpeg" class="card-img-top" alt="...">
+                        <div class="overlay">Chicken 65</div>
+                      </div>
+                    </div>
+                   </div>
+
+                   <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/ARABIAN KABSA-blend-14.png" class="card-img-top" alt="...">
+                        <div class="overlay">Arabian Kabab</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/ARABIAN MANDI MASALA-blend-4.png" class="card-img-top" alt="...">
+                       
+                        <div class="overlay">Arabian Mandi</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/BIRYANI MASALA-blend-3.png" class="card-img-top" alt="...">
+                        <div class="overlay">Biryani masalas</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/BLACK PAPPER POWDER-blend-17.png" class="card-img-top" alt="...">
+                        <div class="overlay">Black Paper</div>
+                      </div>
+                    </div>
+                   </div>
+
+                   <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/blend-1.png" class="card-img-top" alt="...">
+                        <div class="overlay">Chicken Ghee Roast</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/blend-16.png" class="card-img-top" alt="...">
+                       
+                        <div class="overlay">Cumin Powder</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/blend-18.png" class="card-img-top" alt="...">
+                        <div class="overlay">Dry Ginger</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/CHICKEN MASALA-blend-2.png" class="card-img-top" alt="...">
+                        <div class="overlay">Chicken Masala</div>
+                      </div>
+                    </div>
+                   </div>
+
+                   <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/CHICKEN PULIMUNGHI MASLA-blend-11.png" class="card-img-top" alt="...">
+                        <div class="overlay">Chicken Pulimunghi</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/CHICKEN SUKKA-blend-26.png" class="card-img-top" alt="...">
+                       
+                        <div class="overlay">Chicken Sukka</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/CHILLI POWDER-blend-24.png" class="card-img-top" alt="...">
+                        <div class="overlay">Chilli Powder</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/CORIANDER POWDER-blend-15.png" class="card-img-top" alt="...">
+                        <div class="overlay">Corriander Powder</div>
+                      </div>
+                    </div>
+                   </div>
+
+                   <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/CORN FLOR-blend-6.png" class="card-img-top" alt="...">
+                        <div class="overlay">Corn Flour</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/CUSTARD POWDER-blend-14.png" class="card-img-top" alt="...">
+                       
+                        <div class="overlay">Custard Powder</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/EGG CURRY ROST MASALA-blend-12.png" class="card-img-top" alt="...">
+                        <div class="overlay">Egg Curry Rost</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/GARAM MASALA POWDER-blend-25.png" class="card-img-top" alt="...">
+                        <div class="overlay">Garam Masala</div>
+                      </div>
+                    </div>
+                   </div>
+
+                   <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/KASHMIRI CHILI POEDER-blend-10.png" class="card-img-top" alt="...">
+                        <div class="overlay">Kahmiri Chilli</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/KASURI METHI-blend-7.png" class="card-img-top" alt="...">
+                       
+                        <div class="overlay">Kasuri Methi</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/KORMA SOUP GREEN MASLA-blend-28.png" class="card-img-top" alt="...">
+                        <div class="overlay">Korma Soup</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/mutton masala-blend-13.png" class="card-img-top" alt="...">
+                        <div class="overlay">Mutton Masala</div>
+                      </div>
+                    </div>
+                   </div>
+
+                   <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/PREMIUM WHITE PEPPER POWDER-blend-19.png" class="card-img-top" alt="...">
+                        <div class="overlay">White Paper</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/SAMBAR POWDER-blend-20.png" class="card-img-top" alt="...">
+                       
+                        <div class="overlay">Sambar Powder</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/SAMOSA MASLA MIX-blend-21.png" class="card-img-top" alt="...">
+                        <div class="overlay">Samosa Masala</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/SUPER GARAM MASLA-blend-22.png" class="card-img-top" alt="...">
+                        <div class="overlay">garam masala</div>
+                      </div>
+                    </div>
+                   </div>
+
+                   <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/TURMERIC POWDER-blend-20.png" class="card-img-top" alt="...">
+                        <div class="overlay">Turmeric powder</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/VEG PULAV-blend-8.png" class="card-img-top" alt="...">
+                       
+                        <div class="overlay">veg pulav</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/YELLOW KABAB MASALA-blend-5.png" class="card-img-top" alt="...">
+                        <div class="overlay">kabab masala</div>
+                      </div>
+                    </div>
+                    
+                   </div>
+
+
+
+
+
+
+
+
+                  
+                </div>
+                <div id="card3" class="tab-pane fade ">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/raw-1.png" class="card-img-top" alt="...">
+                        <div class="overlay">...</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/raw-2.png" class="card-img-top" alt="...">
+                        <div class="overlay">...</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/raw-3.png" class="card-img-top" alt="...">
+                        <div class="overlay">...</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/raw-4.png" class="card-img-top" alt="...">
+                        <div class="overlay">...</div>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                </div>
+
+                <div id="card4" class="tab-pane fade ">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/raw-5.png" class="card-img-top" alt="...">
+                        <div class="overlay">....</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/raw-6.png" class="card-img-top" alt="...">
+                        <div class="overlay">.....</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/raw-7.png" class="card-img-top" alt="...">
+                        <div class="overlay">....</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/raw-8.png" class="card-img-top" alt="...">
+                        <div class="overlay">....</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+                <div id="card5" class="tab-pane fade ">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/authentic-1.png" class="card-img-top" alt="...">
+                        <div class="overlay">....</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/authentic-3.png" class="card-img-top" alt="...">
+                        <div class="overlay">....</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/authentic-4.png" class="card-img-top" alt="...">
+                        <div class="overlay">....</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 my-4">
+                      <div class="card h-100 border-0">
+                        <img src="./Assests/images/vanila-authentic-2.png" class="card-img-top" alt="...">
+                        <div class="overlay">.....</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+
+      <!-- aos js -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+          AOS.init();
+      </script>
+</body>
+
+</html>

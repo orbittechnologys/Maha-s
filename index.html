@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maha's</title>
+
+    <!-- font awesome link -->
+   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- aos css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Patua+One&family=Poppins:ital@0;1&family=Sora:wght@700&display=swap');
+        /* nav */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+       body{
+         font-family: inter;
+           }
+        .nav-item a:hover {
+            text-decoration: offset;
+            color: #fff;
+            border-bottom: 1px solid #fff;
+            padding-bottom: 3px;
+        }
+
+
+        /* products */
+        .pro h5 {
+            color: #7C2B19;
+            font-family: Palanquin Dark;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .pro p {
+            color: #000;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 172.023%;
+            /* 34.405px */
+        }
+
+        .pro button {
+            border-radius: 5px;
+            background: #7C2B19;
+            color: #FFF;
+            font-family: Inter;
+            font-size: 20px;
+
+            font-weight: 500;
+            line-height: 139.023%;
+            /* 36.146px */
+            display: inline-flex;
+            padding: 6px 41px 9px 33px;
+            align-items: center;
+            border: none;
+        }
+
+        .pro_button {
+            border-radius: 5px;
+            background: #7C2B19;
+            color: #FFF;
+            font-family: Inter;
+            font-size: 20px;
+
+            font-weight: 500;
+            line-height: 139.023%;
+            /* 36.146px */
+            display: inline-flex;
+            padding: 6px 41px 9px 33px;
+            align-items: center;
+            border: none;
+        }
+
+
+        /* images */
+        .image-stack {
+            position: relative;
+            width: 100%;
+            margin-right: 5%;
+            
+        }
+
+        .image-stack__item--bottom {
+            position: absolute;
+            margin-top: -2%;
+            margin-right: 0;
+            margin-left: 7%;
+            top: 0;
+            width: 50%;
+            z-index: 2;
+
+        }
+
+       
+
+
+        .image-stack__item--center {
+            position: absolute;
+            margin-top: 4%;
+            margin-right: 5%;
+            margin-left: 25%;
+            top: 0;
+            width: 50%;
+            z-index: 1;
+
+        }
+
+        .image-stack__item--top {
+            margin-top: 5%;
+            padding-top: 40px;
+            padding-right: 25%;
+            width: 400px;
+            height: 400px;
+            flex-shrink: 0;
+            z-index: -1;
+            position: relative;
+        }
+
+        .try {
+            margin-left: 20%;
+            width: 230px;
+            height: 345px;
+            flex-shrink: 0;
+            z-index: -1;
+            position: relative;
+        }
+        /* above of black box */
+        .veg {
+            opacity: 0.7;
+            position: relative;
+        }
+
+
+       /* about */
+        .about {
+            color: #000;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 139.023%;
+            /* 30.585px */
+        }
+
+        .about1 p {
+            color: #000;
+            font-family: Palanquin Dark;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 143.1%;
+            /* 45.792px */
+            margin-left: 50px;
+        }
+        /* above of brown box */
+        .hero {
+            position: relative;
+        }
+
+        .text-block {
+            position: absolute;
+            bottom: 55%;
+            right: 20px;
+           
+            color: white;
+            margin-left: 50%;
+            padding-right: 20px;
+        }
+
+       /* footer */
+        .footer {
+            top: 20%;
+        }
+
+
+        /* @media only screen and (max-width: 600px) and (min-width: 200px) {
+        .black-box1 {
+            background-color: #000;
+            margin-top: -8%;
+            height: 250px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+    } */
+        
+        /* media query */
+        @media only screen and (max-width: 1920px) and (min-width: 200px) {
+            .black-box {
+                background-color: #000;
+                width: 750px;
+                height: 150px;
+                margin-left: 15%;
+                margin-top: -4%;
+                position: absolute;
+            }
+
+            .try {
+                margin-left: 20%;
+                width: 190px;
+                height: 255px;
+                flex-shrink: 0;
+                z-index: -1;
+                position: relative;
+            }
+
+            .try-bg {
+                margin-left: 30px !important;
+            }
+        }
+
+        .black-box1 {
+            background-color: #000;
+            margin-top: -8%;
+            height: 250px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        @media only screen and (max-width: 1920px) and (min-width: 200px) {
+            .brown-box {
+                display: flex;
+                position: relative;
+                background: #7C2B19;
+                border-radius: 10px;
+                height: 20%;
+                width: 86%;
+                left: 7%;
+                top: -50px;
+                z-index: 0;
+            }
+
+
+        }
+
+        @media only screen and (max-width: 900px) {
+
+            
+
+            .text-block {
+                position: absolute;
+                bottom: 10%;
+                right: 20px;
+                font-size: 10px;
+                color: white;
+                margin-left: 50%;
+                padding-right: 20px;
+            }
+
+            .text-block h1 {
+                font-size: 15px;
+            }
+        }
+
+
+        .stack-image{
+            width: 100%;
+            overflow: hidden;
+        }
+        .stack-image-product{
+            width: 100%;
+            overflow: hidden;
+
+        }
+
+        @media only screen and (max-width: 912px) and (min-width:280px) {
+            .contact{
+                text-align: center;
+            }
+            
+        }
+
+        @media only screen and (max-width: 612px) and (min-width:280px) {
+            .text-block {
+                position: absolute;
+            
+                bottom: 15%;
+                right: 20px;
+                font-size: 10px;
+                color: white;
+                margin-left: 30%;
+                padding-right: 20px;
+            }
+
+            .text-block h1 {
+                font-size: 12px;
+            }
+
+            .text-block p {
+                font-size: 8px;
+            }
+            #cent{
+                margin-right: 75px;
+            }
+        }
+
+
+        @media only screen and (max-width: 912px) and (min-width:610px) {
+            .text-block {
+                position: absolute;
+            
+                bottom: 15%;
+                right: 20px;
+                /* font-size: 10px; */
+                color: white;
+                margin-left: 50%;
+                padding-right: 20px;
+            }
+
+            .text-block h1 {
+                font-size: 24px;
+            }
+
+            .text-block p {
+                font-size: 16px;
+            }
+          
+        }
+
+       
+
+       
+
+        /* @media only screen and (max-width: 280px) {
+            .text-block {
+                position: absolute;
+                bottom: 10%;
+                right: 20px;
+                font-size: 5px;
+                color: white;
+                margin-left: 50%;
+                padding-right: 20px;
+            }
+
+            .text-block h1 {
+                font-size: 15px;
+            }
+
+            .text-block .btn {
+                height: 10px;
+            }
+        } */
+
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 222;
+        }
+        #navbarSupportedContent ul li a{
+            margin-left: 20px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light position-sticky" style="background-color: #7C2B19;" id="home">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./Assests/images/Maha’s.png" alt="" height="40"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2  mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#product">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact">contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- hero-->
+    <div class="hero" >
+        <img class="img-fluid" src="Assests/images/hero.png" >
+        <div class="text-block" >
+            <h1 style="padding: 5%;" class="ha">Elevate Your Lifestyle with Style, Tech & Flavor.</h1>
+            <p style="bottom: 10px;" class="ha1">"Discover a World of Style, Innovation & Taste with Maha's - Your One-Stop Destination for Garments, Electronics & Exquisite Masala's!"</p>
+            
+        </div>
+    </div>
+    <!-- brown box -->
+    <div class="container" style="width: 100vw;">
+        <div class="brown-box" data-aos="flip-up" data-aos-delay="100" data-aos-duration="1000">
+            <div class="d-flex text-center mt-4">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <!-- alignment problem -->
+                        <div class="svg" style="margin-top: -1%;">  
+                            <svg xmlns="http://www.w3.org/2000/svg" width="75" height="57" viewBox="0 0 75 57"
+                                fill="none">
+                                <path
+                                    d="M27.2386 4.97314L25.1467 7.18886L27.2386 9.40438L29.3342 7.18867L27.2386 4.97314ZM52.4528 5.71383L49.7072 8.61513L52.4528 11.5194L55.1945 8.61513L52.4528 5.71383ZM36.4215 7.518L33.6797 10.4193L36.4213 13.3206L39.167 10.4193L36.4215 7.518ZM12.9258 7.84694L10.8339 10.0625L12.9258 12.2782L15.0217 10.0625L12.9261 7.84694H12.9258ZM61.055 10.2697L59.3822 13.1376L55.7599 14.4633L59.3823 15.8438L61.055 18.6568L62.7239 15.7889L66.3461 14.4633L62.793 13.1376L61.055 10.2699V10.2697ZM24.0392 11.559L21.9396 15.1642L17.3906 16.8282L21.9398 18.5622L24.0393 22.0974L26.1349 18.4921L30.6842 16.8281L26.2235 15.1642L24.0393 11.5588L24.0392 11.559ZM49.7073 12.4579L46.9616 15.3592L49.7073 18.2634L52.4489 15.3592L49.7073 12.4579ZM37.3826 18.6141L35.1061 21.0218L37.3826 23.4323L39.659 21.0216L37.3826 18.6141ZM50.0609 21.6435L48.3382 24.6057L44.6005 25.9711L48.3382 27.3942L50.0609 30.3017L51.7876 27.3395L55.5253 25.9711L51.8605 24.6057L50.0608 21.6435H50.0609ZM16.7867 22.3229L14.6911 24.5357L16.7867 26.7512L18.8786 24.5355L16.7867 22.323V22.3229ZM28.3691 24.9623L26.2772 27.178L28.3691 29.3934L30.4649 27.178L28.3693 24.9623H28.3691ZM37.3097 27.3089C36.3655 27.3196 35.5506 27.7315 34.6411 28.287C28.9763 31.7494 21.8038 36.7741 21.7168 39.5815C20.7033 39.6771 19.8017 40.0949 19.8017 40.8311C19.8017 41.929 21.6947 42.3229 23.0779 42.0257C23.0602 42.0949 23.0512 42.1654 23.0511 42.236C23.0511 43.8038 26.915 43.9382 27.6348 42.6716C31.8924 43.5737 37.1146 43.7254 41.8859 43.2721C42.1754 44.73 46.0643 44.7518 46.5235 43.3725C47.7845 44.1062 50.081 44.1491 51.4725 43.5067C52.7861 44.1671 55.4604 43.8425 55.4604 42.5497C55.4604 42.3583 55.4032 42.1889 55.2988 42.0408C56.0199 41.7931 56.5371 41.3592 56.5371 40.7364C56.5371 39.3387 53.9351 38.9103 52.2647 39.4107C51.7065 36.3706 44.9184 31.1452 39.8519 28.1285C38.856 27.5355 38.0445 27.3003 37.3101 27.3087L37.3097 27.3089ZM15.7179 38.271C14.3951 38.2733 13.0723 38.7606 13.0723 39.7248C13.0723 41.6531 18.3635 41.6167 18.3635 39.7248C18.3635 38.7517 17.0403 38.2688 15.7179 38.2709V38.271ZM63.7621 39.5419C62.5873 39.546 61.4126 39.9726 61.4126 40.8126C61.4126 42.5417 66.1117 42.5259 66.1117 40.8126C66.1117 39.9561 64.9369 39.5378 63.7621 39.5419ZM11.0033 41.075C9.82847 41.0767 8.65381 41.5074 8.65381 42.3639C8.65381 44.0774 13.3528 44.0447 13.3528 42.3639C13.3528 41.4997 12.178 41.073 11.0033 41.075ZM61.6665 43.3666C60.3437 43.3688 59.0209 43.8561 59.0209 44.8203C59.0209 46.7489 64.3082 46.7123 64.3082 44.8203C64.3082 43.8471 62.9891 43.3643 61.6663 43.3665L61.6665 43.3666ZM27.9692 44.0096C27.2308 44.0109 26.4933 44.1818 26.0466 44.5216C24.6642 44.0453 22.3704 44.4157 22.3704 45.6127C22.3704 47.0079 25.4857 47.2423 26.6428 46.3746C28.0251 46.8427 30.319 46.4731 30.319 45.2989C30.319 44.4344 29.1442 44.0077 27.9694 44.0096H27.9692ZM38.7018 44.1651C37.527 44.1692 36.3522 44.5957 36.3522 45.4358C36.3522 47.1646 41.0514 47.1493 41.0514 45.4358C41.0514 44.5794 39.8766 44.161 38.7018 44.1651ZM15.0757 45.0794C13.9009 45.0813 12.7261 45.5119 12.7261 46.3686C12.7261 48.0817 17.4253 48.0489 17.4253 46.3686C17.4253 45.5041 16.2505 45.0774 15.0757 45.0794ZM51.8068 46.3655C50.632 46.3694 49.4572 46.7991 49.4572 47.6393C49.4572 48.6022 50.9152 49.0245 52.2067 48.9133C52.1185 49.0646 52.0721 49.2335 52.0721 49.4191C52.0721 51.2543 56.5667 51.4205 57.4557 49.9584C58.7247 50.0397 60.1167 49.6112 60.1167 48.6785C60.1167 47.2435 56.8189 47.0324 55.7483 47.99C55.2161 47.9013 54.6328 47.8964 54.0912 47.9715C54.1336 47.8687 54.1564 47.7589 54.1564 47.6394C54.1564 46.7828 52.9817 46.3615 51.8069 46.3655H51.8068ZM33.2374 46.7068C31.8902 46.7115 30.5456 47.2032 30.5456 48.1665C30.5456 50.1492 35.9329 50.1312 35.9329 48.1665C35.9329 47.1845 34.5845 46.7021 33.2373 46.7069L33.2374 46.7068ZM45.6158 48.4317C44.0715 48.4342 42.5279 49.0032 42.5279 50.1292C42.5279 52.381 48.7035 52.3381 48.7035 50.1292C48.7035 48.9931 47.16 48.4292 45.6159 48.4317H45.6158ZM26.7887 49.0871C25.4415 49.0916 24.093 49.5832 24.093 50.5467C24.093 52.5291 29.4805 52.5113 29.4805 50.5467C29.4805 49.5644 28.1359 49.0823 26.7887 49.087V49.0871Z"
+                                    fill="white" />
+                            </svg>
+
+                            <p class="text-white">Ignite Your Culinary Journey with Unleashing Flavors of Tradition, Spices & Exquisite Taste Sensations for Unforgettable Adventures.<p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="svg ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="61" height="48" viewBox="0 0 61 48"
+                                fill="none">
+                                <path
+                                    d="M47.021 19V37M47.021 37V44H13.9793V37M47.021 37H55.9168V12L49.5627 7M13.9793 37H5.0835V12L11.4377 7M13.9793 37V19M11.4377 7L20.3335 4M11.4377 7L30.5002 21M20.3335 4H40.6668M20.3335 4L30.5002 21M40.6668 4L49.5627 7M40.6668 4L30.5002 21M49.5627 7L30.5002 21M30.5002 21V44"
+                                    stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <path
+                                d="M27.2386 4.97314L25.1467 7.18886L27.2386 9.40438L29.3342 7.18867L27.2386 4.97314ZM52.4528 5.71383L49.7072 8.61513L52.4528 11.5194L55.1945 8.61513L52.4528 5.71383ZM36.4215 7.518L33.6797 10.4193L36.4213 13.3206L39.167 10.4193L36.4215 7.518ZM12.9258 7.84694L10.8339 10.0625L12.9258 12.2782L15.0217 10.0625L12.9261 7.84694H12.9258ZM61.055 10.2697L59.3822 13.1376L55.7599 14.4633L59.3823 15.8438L61.055 18.6568L62.7239 15.7889L66.3461 14.4633L62.793 13.1376L61.055 10.2699V10.2697ZM24.0392 11.559L21.9396 15.1642L17.3906 16.8282L21.9398 18.5622L24.0393 22.0974L26.1349 18.4921L30.6842 16.8281L26.2235 15.1642L24.0393 11.5588L24.0392 11.559ZM49.7073 12.4579L46.9616 15.3592L49.7073 18.2634L52.4489 15.3592L49.7073 12.4579ZM37.3826 18.6141L35.1061 21.0218L37.3826 23.4323L39.659 21.0216L37.3826 18.6141ZM50.0609 21.6435L48.3382 24.6057L44.6005 25.9711L48.3382 27.3942L50.0609 30.3017L51.7876 27.3395L55.5253 25.9711L51.8605 24.6057L50.0608 21.6435H50.0609ZM16.7867 22.3229L14.6911 24.5357L16.7867 26.7512L18.8786 24.5355L16.7867 22.323V22.3229ZM28.3691 24.9623L26.2772 27.178L28.3691 29.3934L30.4649 27.178L28.3693 24.9623H28.3691ZM37.3097 27.3089C36.3655 27.3196 35.5506 27.7315 34.6411 28.287C28.9763 31.7494 21.8038 36.7741 21.7168 39.5815C20.7033 39.6771 19.8017 40.0949 19.8017 40.8311C19.8017 41.929 21.6947 42.3229 23.0779 42.0257C23.0602 42.0949 23.0512 42.1654 23.0511 42.236C23.0511 43.8038 26.915 43.9382 27.6348 42.6716C31.8924 43.5737 37.1146 43.7254 41.8859 43.2721C42.1754 44.73 46.0643 44.7518 46.5235 43.3725C47.7845 44.1062 50.081 44.1491 51.4725 43.5067C52.7861 44.1671 55.4604 43.8425 55.4604 42.5497C55.4604 42.3583 55.4032 42.1889 55.2988 42.0408C56.0199 41.7931 56.5371 41.3592 56.5371 40.7364C56.5371 39.3387 53.9351 38.9103 52.2647 39.4107C51.7065 36.3706 44.9184 31.1452 39.8519 28.1285C38.856 27.5355 38.0445 27.3003 37.3101 27.3087L37.3097 27.3089ZM15.7179 38.271C14.3951 38.2733 13.0723 38.7606 13.0723 39.7248C13.0723 41.6531 18.3635 41.6167 18.3635 39.7248C18.3635 38.7517 17.0403 38.2688 15.7179 38.2709V38.271ZM63.7621 39.5419C62.5873 39.546 61.4126 39.9726 61.4126 40.8126C61.4126 42.5417 66.1117 42.5259 66.1117 40.8126C66.1117 39.9561 64.9369 39.5378 63.7621 39.5419ZM11.0033 41.075C9.82847 41.0767 8.65381 41.5074 8.65381 42.3639C8.65381 44.0774 13.3528 44.0447 13.3528 42.3639C13.3528 41.4997 12.178 41.073 11.0033 41.075ZM61.6665 43.3666C60.3437 43.3688 59.0209 43.8561 59.0209 44.8203C59.0209 46.7489 64.3082 46.7123 64.3082 44.8203C64.3082 43.8471 62.9891 43.3643 61.6663 43.3665L61.6665 43.3666ZM27.9692 44.0096C27.2308 44.0109 26.4933 44.1818 26.0466 44.5216C24.6642 44.0453 22.3704 44.4157 22.3704 45.6127C22.3704 47.0079 25.4857 47.2423 26.6428 46.3746C28.0251 46.8427 30.319 46.4731 30.319 45.2989C30.319 44.4344 29.1442 44.0077 27.9694 44.0096H27.9692ZM38.7018 44.1651C37.527 44.1692 36.3522 44.5957 36.3522 45.4358C36.3522 47.1646 41.0514 47.1493 41.0514 45.4358C41.0514 44.5794 39.8766 44.161 38.7018 44.1651ZM15.0757 45.0794C13.9009 45.0813 12.7261 45.5119 12.7261 46.3686C12.7261 48.0817 17.4253 48.0489 17.4253 46.3686C17.4253 45.5041 16.2505 45.0774 15.0757 45.0794ZM51.8068 46.3655C50.632 46.3694 49.4572 46.7991 49.4572 47.6393C49.4572 48.6022 50.9152 49.0245 52.2067 48.9133C52.1185 49.0646 52.0721 49.2335 52.0721 49.4191C52.0721 51.2543 56.5667 51.4205 57.4557 49.9584C58.7247 50.0397 60.1167 49.6112 60.1167 48.6785C60.1167 47.2435 56.8189 47.0324 55.7483 47.99C55.2161 47.9013 54.6328 47.8964 54.0912 47.9715C54.1336 47.8687 54.1564 47.7589 54.1564 47.6394C54.1564 46.7828 52.9817 46.3615 51.8069 46.3655H51.8068ZM33.2374 46.7068C31.8902 46.7115 30.5456 47.2032 30.5456 48.1665C30.5456 50.1492 35.9329 50.1312 35.9329 48.1665C35.9329 47.1845 34.5845 46.7021 33.2373 46.7069L33.2374 46.7068ZM45.6158 48.4317C44.0715 48.4342 42.5279 49.0032 42.5279 50.1292C42.5279 52.381 48.7035 52.3381 48.7035 50.1292C48.7035 48.9931 47.16 48.4292 45.6159 48.4317H45.6158ZM26.7887 49.0871C25.4415 49.0916 24.093 49.5832 24.093 50.5467C24.093 52.5291 29.4805 52.5113 29.4805 50.5467C29.4805 49.5644 28.1359 49.0823 26.7887 49.087V49.0871Z"
+                                fill="white" />
+                            </svg>
+                            <p class="text-white" style="margin-top: 1%;">Experience the ultimate fusion of style and comfort Fashion Redefined, Where Style Meets Comfort setting new trends effortlessly.</p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="svg" style="margin-top: -3%;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="57" height="60" viewBox="0 0 57 60"
+                                fill="none">
+                                <path
+                                    d="M51.6562 8.20312H5.34375C4.3585 8.20312 3.5625 9.04102 3.5625 10.0781V39.1406C3.5625 40.1777 4.3585 41.0156 5.34375 41.0156H26.4961V47.5781H16.9219C16.432 47.5781 16.0312 48 16.0312 48.5156V51.3281C16.0312 51.5859 16.2316 51.7969 16.4766 51.7969H40.5234C40.7684 51.7969 40.9688 51.5859 40.9688 51.3281V48.5156C40.9688 48 40.568 47.5781 40.0781 47.5781H30.5039V41.0156H51.6562C52.6415 41.0156 53.4375 40.1777 53.4375 39.1406V10.0781C53.4375 9.04102 52.6415 8.20312 51.6562 8.20312ZM49.4297 36.7969H7.57031V12.4219H49.4297V36.7969Z"
+                                    fill="white" />
+                            </svg>
+                            <p class="text-white">Empowering Your Digital Lifestyle with Cutting-Edge Technology and Unmatched Performance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about box -->
+    <div class="container" style="width: 100vw;">
+
+        <div class="row mt-5" id="about">
+            <div class="col-lg-6">
+                <h1>About</h1>
+                <p class="about p-2" data-aos="flip-down" data-aos-delay="100" data-aos-duration="1000">"Where fashion meets technology and culinary delights. Explore our stylish garments, featuring trendy designs and timeless classics. Immerse yourself in innovative electronics, offering cutting-edge features. And savor the authentic flavors of our carefully crafted masalas. Mahas has it all!"
+                </p>
+
+            </div>
+            <div class="col-lg-6 about1">
+                <div class="mt-5" data-aos="flip-down" data-aos-delay="100" data-aos-duration="1000">
+                    <img src="./Assests/images/fluent_comma-24-filled.png" class="img-fluid">
+
+                    <p class="about1" data-aos="flip-down" data-aos-delay="100" data-aos-duration="1000"><span style="color: #7C2B19;">Your Lifestyle</span> with Fashion, Tech, and Flavors. </p>
+                    <p>Elevate Your Life<span style="color: #7C2B19;"> with the Ultimate Fusion of</span></p>
+                    <!-- <p>Elevate Your Life with the Ultimate Fusion of Style,</p> -->
+                    <p><span style="color: #7C2B19;">Style, and Taste. </span>
+                        Explore, Shop, Indulge!</p>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- spices box -->
+    <div class="container stack-image-product" id="product" style="width: 100vw;">
+        <div class="row" >
+            <h1>Products</h1>
+            <div class="col-lg-6 mt-2  "  data-aos="slide-left" data-aos-delay="100" data-aos-duration="1000">
+                <div class="image-stack">
+                    <div class="image-stack__item image-stack__item--bottom">
+                        <img src="./Assests/images/Rectangle 37.png" alt="" class="img-fluid try">
+
+                    </div>
+                    <div class="image-stack__item image-stack__item--center">
+                        <img src="./Assests/images/Rectangle 38.png" alt="" class="img-fluid try">
+
+                    </div>
+                    <div class="image-stack__item image-stack__item--top">
+                        <img src="./Assests/images/Rectangle 36.png" alt="" class="img-fluid try try-bg">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6 pro">
+                <h5 class="text-center pb-3" data-aos="flip-up" data-aos-delay="200" data-aos-duration="1000">Spices</h5>
+                <p>Experience culinary perfection with Maha's masalas. Our exquisite blends of spices elevate
+                     your dishes to new heights of flavor. From aromatic Garam masalas to Fiery chilli powders,
+                      indulge in a taste sensation like no other. Crafted from the finest ingredients, our masalas
+                       ensure top-notch quality and authenticity in every bite. Spice up your cooking game with Maha's
+                        and transform every meal into a flavorful adventure. Explore our collection and savor the magic
+                         of Maha's masalas.</p>
+
+                <div class="text-center">
+                    <a href="spices.html"><button type="button" class="mb-5">See Product</button></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- garments box -->
+    <div class="container" id="garments">
+        <div class="row">
+            <div class="col-lg-6 pro ">
+                <h5 class="text-center pb-3 pt-3" data-aos="flip-up" data-aos-delay="200" data-aos-duration="1000">Garments</h5>
+                <p>Elevate your style with Maha's garments. Discover trendsetting apparel that combines fashion-forward designs with exceptional quality. From trendy outfits to timeless classics, our collection offers something for everyone. Experience the perfect fusion of comfort and style that will enhance your wardrobe. Whether it's Casual wear, Formal attire or Ethnic outfits, Maha's has you covered. Embrace your unique sense of fashion and make a statement with our carefully curated garments. Explore our collection and unleash your personal style with Maha's.</p>
+
+                <div class="text-center">
+                    <a href="garments.html"><button type="button" class="mb-5">See Product</button></a>
+                </div>
+            </div>
+            <div class="col-lg-6 pro" data-aos="slide-right" data-aos-delay="100" data-aos-duration="1000">
+                <div class="image-stack">
+                    <div class="image-stack__item image-stack__item--bottom">
+                        <img src="./Assests/images/Rectangle 40.png" alt="" class="img-fluid try">
+
+                    </div>
+                    <div class="image-stack__item image-stack__item--center">
+                        <img src="./Assests/images/Rectangle 41.png" alt="" class="img-fluid try">
+
+                    </div>
+                    <div class="image-stack__item image-stack__item--top">
+                        <img src="./Assests/images/Rectangle 39.png" alt="" class="img-fluid try try-bg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- electronics box -->
+    <div class="container stack-image" id="electronics">
+        <div class="row">
+            <div class="col-lg-6 pro  "  >
+                <div class="image-stack"  data-aos="slide-left"  data-aos-delay="100" data-aos-duration="1000">
+                    <div class="image-stack__item image-stack__item--bottom">
+                        <img src="./Assests/images/Rectangle 43.png" alt="" class="img-fluid try">
+
+                    </div>
+                    <div class="image-stack__item image-stack__item--center">
+                        <img src="./Assests/images/Rectangle 44.png" alt="" class="img-fluid try">
+
+                    </div>
+                    <div class="image-stack__item image-stack__item--top">
+                        <img src="./Assests/images/Rectangle 42.png" alt="" class="img-fluid try try-bg">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6 pro">
+                <h5 class="text-center pb-3 pt-3"  data-aos="flip-up" data-aos-delay="200" data-aos-duration="1000">Electronics</h5>
+                <p>Ignite innovation with Maha's electronics. Experience cutting-edge technology that enhances your everyday life. From state-of-the-art gadgets to smart home solutions, our collection is designed to elevate your digital experience. Maha's offers top-notch quality and groundbreaking features. Embrace the future with our range of innovative electronics and stay ahead in the digital world. Explore our collection and unlock a world of possibilities with Maha's electronics.</p>
+
+                <div class="text-center">
+                    <a href="electronics.html"><button type="button" class="mb-5">See Product</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- veg box -->
+    <div style="background-color:  rgba(31, 28, 28, 0.60);  z-index: -1;" id="contact">
+        <img src="./Assests/images/fruit.png" class="img-fluid veg" style="width: 100%; height: 50%; z-index: -2;">
+    </div>
+    <!-- black box -->
+    <div class="container" style="padding: 0 10%;" id="contact" data-aos="flip-up" data-aos-delay="100" data-aos-duration="1000">
+        <div class="container black-box1">
+            <h2 class="contact text-white" id="cent" style="display: flex; justify-content: center;">Contact Us</h2>
+            <div class="row" >
+
+                <div class="col-lg-4">
+                    
+                    <div class="text-white" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M13.9999 13.4166C13.2264 13.4166 12.4845 13.1093 11.9375 12.5623C11.3905 12.0153 11.0833 11.2735 11.0833 10.4999C11.0833 9.72637 11.3905 8.98451 11.9375 8.43752C12.4845 7.89054 13.2264 7.58325 13.9999 7.58325C14.7735 7.58325 15.5153 7.89054 16.0623 8.43752C16.6093 8.98451 16.9166 9.72637 16.9166 10.4999C16.9166 10.8829 16.8411 11.2622 16.6946 11.6161C16.548 11.9699 16.3332 12.2915 16.0623 12.5623C15.7915 12.8332 15.4699 13.048 15.1161 13.1946C14.7622 13.3411 14.3829 13.4166 13.9999 13.4166ZM13.9999 2.33325C11.834 2.33325 9.75676 3.19367 8.22521 4.72521C6.69367 6.25676 5.83325 8.33398 5.83325 10.4999C5.83325 16.6249 13.9999 25.6666 13.9999 25.6666C13.9999 25.6666 22.1666 16.6249 22.1666 10.4999C22.1666 8.33398 21.3062 6.25676 19.7746 4.72521C18.2431 3.19367 16.1659 2.33325 13.9999 2.33325Z" fill="white"/>
+                          </svg>
+                         Mahas Private Limited, Bootstart CoWork, No 51, 2nd floor, Desk No 26, Rishab Arcade Sanjay Nagar Main 
+                         Road RMV 2nd Stage. Bengaluru Karnataka, 
+                          560094
+                    </div>
+            
+                </div>
+                <div class="col-lg-5" style="padding: 1% 2% 0% 5%;">
+                    <p class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_105_52)">
+                                <path
+                                    d="M22 7.53491V16.9999C22 17.7651 21.7077 18.5014 21.1827 19.0582C20.6578 19.6149 19.9399 19.95 19.176 19.9949L19 19.9999H5C4.23479 20 3.49849 19.7076 2.94174 19.1826C2.38499 18.6577 2.04989 17.9398 2.005 17.1759L2 16.9999V7.53491L11.445 13.8319L11.561 13.8979C11.6977 13.9647 11.8478 13.9994 12 13.9994C12.1522 13.9994 12.3023 13.9647 12.439 13.8979L12.555 13.8319L22 7.53491Z"
+                                    fill="white" />
+                                <path
+                                    d="M19.0001 4C20.0801 4 21.0271 4.57 21.5551 5.427L12.0001 11.797L2.44507 5.427C2.6958 5.01977 3.04028 4.6784 3.44978 4.43138C3.85927 4.18436 4.3219 4.03886 4.79907 4.007L5.00007 4H19.0001Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_105_52">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        mahasprivatelimited@gmail.com
+                    </p>
+                        <p class="text-white">
+                            <img src="./Assests/images/phone-icon.png" class="img-fluid" width="20px">
+                            +918928328730
+                        </p>   
+                </div>
+                <div  class="col-lg-3">
+                    
+                        <p class="text-white" ><a href="#">
+                            <img src="./Assests/images/whatsapp-logo-png.png" class="img-fluid" width="30px"></a>
+                         </P>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="bg-dark text-center text-white" style="margin-top: 13%;">
+        <div class="text-center mt-5 p-3" style="background-color: #000; ">
+            <div>
+                <div class="col-lg-12 navbar navbar-expand-lg navbar-light">
+                    <nav class="col-lg-5">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" aria-current="page" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#product">Spices</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#electronics">Electronics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#garments">Garments</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="col-lg-4 justify-content-center">
+                        © Copyright:
+                        <a class="text-white text-decoration-none" href="#">Maha's</a>
+                    </div>
+                    <div class="col-lg-3" style="display: flex; justify-content: end;">
+                        <nav>
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" aria-current="page" href="#contact">Contact</a>
+                                </li>
+                               
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+<!-- bootstap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <!-- aos js -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+</body>
+
+</html>
